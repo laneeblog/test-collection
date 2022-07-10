@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 
@@ -8,7 +9,7 @@ import json
 '''
 
 # 설정
-rest_api_key = "e105d32d47fadac4f39740fb186deb5e"
+rest_api_key = os.environ["KAKAO_REST_API_KEY"]
 keyword_api = "https://dapi.kakao.com/v2/local/search/keyword.json"
 address_api = "https://dapi.kakao.com/v2/local/search/address.json"
 detailed_url = "https://place.map.kakao.com/main/v/"
